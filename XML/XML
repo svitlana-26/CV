@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<store>
+	<electronics>
+		<smartphone brand="Apple" storage="256GB">iPhone 15</smartphone>
+		<laptop screen="OLED" RAM="16GB">Asus Zenbook</laptop>
+		<headphones type="wireless" ANC="yes" battery="30h">Sony WH-1000XM5</headphones>
+		<powerbank>Anker PowerCore</powerbank>
+	</electronics>
+	<apparel>
+		<jacket weather="waterproof">North Face Parka</jacket>
+		<sneakers>Nike Air Max</sneakers>
+	</apparel>
+	<groceries>
+		<coffee origin="Ethiopia">Arabica Beans</coffee>
+		<chocolate cocoa="72%">Dark Chocolate</chocolate>
+	</groceries>
+</store>
