@@ -1,0 +1,13 @@
+- Google Chrome desktop version 148.0.7778.216, 
+- Safari 18.6, 
+- Telegram desktop version 12.7.281600, 
+- Microsoft Word, Excel Microsoft 365, 
+- Notion for desktop 7.5.2, 
+- Notion for iOS 1.7.311, 
+- Postman Desktop Platform Version: 12.13.6, 
+- Visual Studio Code 1.122.1, 
+- Sourcetree 4.2.18, 
+- Apache JMeter 5.6.3, 
+- Viber version 28,0.2, 
+- Instagram 432.0.0, 
+- Zoom 7.0.5 (81138).
