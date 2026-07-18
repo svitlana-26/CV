@@ -1,0 +1,48 @@
+SELECT COUNT(*) FROM Cities; 
+SELECT COUNT(*) FROM Clients; 
+
+SELECT COUNT(clientName) FROM Clients; 
+SELECT COUNT(clientName) FROM Clients WHERE clientName LIKE "M%"; 
+SELECT COUNT(clientName) FROM Clients WHERE clientName LIKE "%a"; 
+
+SELECT Min(starsCounts) FROM Hotels; 
+SELECT Min(hotelName) FROM Hotels; 
+SELECT Min(creationDate) FROM Hotels; 
+SELECT * FROM Hotels WHERE starsCounts = (SELECT MIN(starsCounts) FROM Hotels); 
+
+SELECT Max(starsCounts) FROM Hotels; 
+SELECT Max(salary) FROM Clients; 
+
+SELECT AVG(salary) FROM Clients; 
+
+SELECT SUM(salary) FROM Clients; 
+
+SELECT * FROM Hotels WHERE starsCounts = (SELECT MIN(starsCounts) FROM Hotels); 
+SELECT * FROM Hotels WHERE starsCounts = (SELECT MAX(starsCounts) FROM Hotels); 
+
+SELECT hotelID, COUNT(hotelID) FROM Rooms WHERE hotelID = 1; 
+
+SELECT Min(creationDate) as minimumCount FROM Hotels; 
+SELECT clientName as NAMEEEE, clientNumber FROM Clients; 
+
+SELECT Count(salary), salary FROM Clients GROUP BY salary; 
+SELECT Count(age), age FROM Clients GROUP BY age; 
+SELECT Max(age), age FROM Clients GROUP BY age; 
+SELECT Count(age), age FROM Clients GROUP BY age HAVING age >=20; 
+SELECT Count(age), age FROM Clients GROUP BY age HAVING age <40; 
+SELECT Count(age), age, clientName FROM Clients GROUP BY age, clientName HAVING clientName LIKE 'M%'; 
+SELECT COUNT(hotelID), hotelID, roomID FROM Rooms GROUP BY hotelID, roomID HAVING hotelID = 5; 
+SELECT COUNT(starsCounts), starsCounts, hotelName FROM Hotels GROUP BY starsCounts, hotelName HAVING starsCounts = 5; 
+
+SELECT * FROM HotelsDB.Clients ORDER BY clientName ASC; 
+SELECT * FROM HotelsDB.Clients ORDER BY clientName DESC; 
+SELECT * FROM HotelsDB.Clients ORDER BY salary ASC; 
+SELECT * FROM HotelsDB.Clients ORDER BY salary DESC; 
+
+SELECT * FROM HotelsDB.Clients ORDER BY salary ASC LIMIT 5; 
+SELECT * FROM HotelsDB.Clients ORDER BY salary DESC LIMIT 5; 
+
+SELECT * FROM HotelsDB.Clients ORDER BY salary DESC LIMIT 5 OFFSET 2; 
+SELECT * FROM HotelsDB.Clients ORDER BY salary DESC LIMIT 1 OFFSET 4; 
+
+SELECT * FROM Hotels; 

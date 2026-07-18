@@ -1,0 +1,28 @@
+SELECT * FROM Clients; 
+SELECT clientName, clientNumber FROM Clients; 
+
+SELECT clientName, clientNumber FROM Clients WHERE clientName = 'Mariia'; 
+SELECT clientName, clientNumber FROM Clients WHERE clientName LIKE 'M%'; 
+SELECT clientName, clientNumber FROM Clients WHERE clientName LIKE '%a'; 
+SELECT clientName, clientNumber FROM Clients WHERE clientName LIKE '%ii%'; 
+SELECT clientName as NAMEEEE, clientNumber FROM Clients WHERE clientName LIKE '%e%'; 
+SELECT clientName, clientNumber FROM Clients WHERE clientNumber LIKE '%050%'; 
+
+SELECT clientName, clientNumber FROM Clients WHERE clientNumber > 1; 
+SELECT clientName, clientNumber FROM Clients WHERE clientNumber < 380990000000 AND clientNumber > 380550000000; 
+SELECT clientName, clientNumber FROM Clients WHERE clientNumber = 380666666666 OR clientNumber = 380959559595; 
+SELECT clientName, clientNumber FROM Clients WHERE clientNumber <> 380666666666; 
+
+SELECT * FROM Cities JOIN Hotels ON Cities.cityID = Hotels.cityId; 
+SELECT * FROM Cities INNER JOIN Hotels ON Cities.cityID = Hotels.cityId; 
+SELECT * FROM Cities JOIN Hotels ON Cities.cityID = Hotels.cityId ORDER BY starsCounts DESC; 
+SELECT * FROM Hotels JOIN Rooms ON Hotels.hotelID = Rooms.hotelID ORDER BY starsCounts DESC; 
+SELECT * FROM Cities LEFT JOIN Hotels ON Cities.cityID = Hotels.cityId; 
+SELECT * FROM Cities RIGHT JOIN Hotels ON Cities.cityID = Hotels.cityId; 
+SELECT * FROM Hotels LEFT JOIN Cities ON Cities.cityID = Hotels.cityId; 
+
+SELECT * FROM Hotels RIGHT JOIN Cities ON Cities.cityID = Hotels.cityId 
+UNION ALL 
+SELECT * FROM Hotels LEFT JOIN Cities ON Cities.cityID = Hotels.cityId WHERE Cities.cityID IS NULL; 
+
+SELECT cityName FROM Cities JOIN Hotels ON Cities.cityID = Hotels.cityId WHERE Hotels.hotelID IS NOT NULL; 
