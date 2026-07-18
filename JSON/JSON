@@ -1,0 +1,42 @@
+{
+  "seller": [
+    {
+      "name": "Artem",
+      "last name": "Kovalenko",
+      "date of birth": "14.08.1993",
+      "phone": "+380111111111",
+      "mail": "art.koval@outlook.com"
+    },
+    {
+      "name": "Olena",
+      "last name": "Melnyk",
+      "date of birth": "05.11.1995",
+      "phone": "+380111111111",
+      "mail": "o.melnyk@ukr.net",
+      "kod": "3294810567234"
+    },
+    {
+      "name": "Dmytro",
+      "last name": "Boyko",
+      "date of birth": "29.03.1988",
+      "phone": "+380111111111",
+      "mail": "dboyko88@gmail.com"
+    },
+    {
+      "name": "Tetyana",
+      "last name": "Shevchenko",
+      "date of birth": "17.01.2001",
+      "phone": "+380111111111",
+      "mail": "tanya.shev@yahoo.com",
+      "kod": "7412589630147"
+    },
+    {
+      "name": "Maksym",
+      "last name": "Tkachenko",
+      "date of birth": "22.06.1997",
+      "phone": "+380111111111",
+      "mail": "max.tkach@gmail.com",
+      "kod": "8520369741258"
+    }
+  ]
+}
